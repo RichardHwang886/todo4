@@ -4,7 +4,7 @@ import {MeteorComponent} from 'angular2-meteor';
 
 @Component({
   selector: 'task',
-  templateUrl: 'client/components/task.html'
+  templateUrl: 'client/components/todo/task.html'
 })
 export class TaskView extends MeteorComponent {
   @Input('data') task: Task;

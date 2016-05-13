@@ -4,13 +4,13 @@ import {TaskView} from './task';
 
 import {MeteorComponent} from 'angular2-meteor';
 
-import {Tasks} from '../../tasks';
+import {Tasks} from '../../../server/tasks';
 
 import {Mongo} from 'meteor/mongo';
 
 @Component({
   selector: 'task-list',
-  templateUrl: 'client/components/task-list.html',
+  templateUrl: 'client/components/todo/task-list.html',
   directives: [TaskView]
 })
 export class TaskList extends MeteorComponent implements OnChanges {
